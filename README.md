@@ -13,3 +13,7 @@ Quick Example
 2. go into project folder
 3. bower install
 4. run with your favourite webserver
+
+Changelog:
+----------
+* More generalized approach by using Pub/Sub mechanism to listen to router events, inspect the instruction set and conditionally display the modal
