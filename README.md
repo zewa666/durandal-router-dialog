@@ -16,4 +16,5 @@ Quick Example
 
 Changelog:
 ----------
+* Added "About" route and VM/View to demonstrate the necessary steps for adding a new route
 * More generalized approach by using Pub/Sub mechanism to listen to router events, inspect the instruction set and conditionally display the modal
