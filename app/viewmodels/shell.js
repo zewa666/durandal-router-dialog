@@ -2,10 +2,12 @@
     return {
         router: router,
         activate: function () {
-            router.map([
-                { route: '', icon: 'glyphicon glyphicon-home', title:'Startpage', moduleId: 'viewmodels/start', nav: true },
-                { route: 'home(/:showModal)', icon: 'glyphicon glyphicon-home', title:'Home', moduleId: 'viewmodels/home', nav: false }
-            ]).buildNavigationModel();
+
+          router.map([
+            { route: '', icon: 'glyphicon glyphicon-home', title:'Startpage', moduleId: 'viewmodels/start', nav: true },
+            { route: 'home(/:showModal)', icon: 'glyphicon glyphicon-home', title:'Home', moduleId: 'viewmodels/home', nav: false },
+            { route: 'about(/:showModal)', icon: 'glyphicon glyphicon-home', title:'About', moduleId: 'viewmodels/about', nav: false }
+          ]).buildNavigationModel();
 
           router.on('router:navigation:complete').then(function(instance, instruction, router){
             console.log(instruction);
